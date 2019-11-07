@@ -1,0 +1,20 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* padding-top: 30px; */
+    /* margin: 20px 0; */
+    background-image: url( "../images/img.jpg" );
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    font-family: Segoe UI, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 0;
+    overflow-x: hidden;
+}

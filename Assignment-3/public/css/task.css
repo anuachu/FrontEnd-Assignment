@@ -1,0 +1,42 @@
+.flex-container {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin-top: 20px;
+    padding: 84px 20px 20px;
+     overflow-x: auto;
+    overflow-y: auto;
+    flex-direction: row;
+    
+}
+
+.task-Wrapper
+{
+     flex-shrink: 0;
+   flex-basis: 240px;
+   max-height: 100%;
+   overflow: hidden;
+}
+
+
+.List{
+  
+    font-weight : bold;
+    margin:4px;
+    font-size:14px;
+   
+}
+
+.task-List{
+   display:flex;
+   justify-content: space-between;
+
+}
+
+.task-List-container{
+    padding: 10px;
+margin-right: 10px;
+border-radius: 4px;
+background-color: rgba( 240, 240, 240, 0.9 );
+}

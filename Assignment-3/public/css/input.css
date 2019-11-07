@@ -1,0 +1,20 @@
+.input-box{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    font-size: 1.2em;
+    resize: none;
+    border-radius: 4px;
+    overflow:none;
+ }
+
+
+
+  .input-text{
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+    font-size: 14px;
+    border-radius: 4px;
+}

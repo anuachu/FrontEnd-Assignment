@@ -1,0 +1,26 @@
+.button{
+    background-color:olive;
+    border:none;
+     color:white;
+     display:inline-block;
+     font-size:1.2em;
+     border-radius: 4px;
+     width:auto;
+     padding:7px;
+     text-align:center;
+     margin-top:10px;
+     margin-right:10px;
+     margin-bottom:10px;
+}
+
+.myButton {
+    
+    
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size:16px;
+     border:none;
+     text-align: left;
+     color:rgb(63, 60, 60);
+    
+            
+ }

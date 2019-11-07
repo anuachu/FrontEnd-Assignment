@@ -1,0 +1,12 @@
+.pointer {
+    cursor: pointer !important;
+    
+}
+
+.pointer:hover {
+    opacity: 0.7;
+}
+
+.pointer:active {
+    outline: none;
+}
