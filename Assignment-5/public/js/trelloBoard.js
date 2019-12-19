@@ -1,11 +1,9 @@
-
-
 class Component {
     constructor() {
-        this.id = Component.getNextId(); 
+        this.id = Component.getNextId(); // every component instance gets a unique id
     }
 
-    
+    // within a static method, context ("this") is the class
     static getNextId() {
         this.id++;
         return this.id;
@@ -15,13 +13,15 @@ class Component {
         this.container = container;
     }
 
-    
+    // override this method in a concrete implementation of Component
     render() {
         return;
     }
 }
 
 Component.id = 0;
+
+
 class Task extends Component {
     constructor( config ) {
         super();
@@ -86,6 +86,7 @@ class Task extends Component {
 }
 
 Task.id = 1;
+
 class TaskList extends Component {
     constructor( config ) {
         super();
@@ -277,7 +278,7 @@ class Board extends Component {
             </div>
         `;
 
-        this.container.querySelector( '.board-show-menu-inner' ).addEventListener( 'click', function() {
+        this.container.querySelector( '.board-show-menu-inner' ).addEventListener( 'onclick', function() {
             if( !this.parentNode.classList.contains( 'show-menu' ) ) {
                 this.parentNode.classList.add( 'show-menu' );
             } else {
@@ -377,7 +378,7 @@ class Board extends Component {
             // if( taskElBeingDraggedOver ) {
             //     // Reference: https://stackoverflow.com/questions/4793604/how-to-insert-an-element-after-another-element-in-javascript-without-using-a-lib
             //     this.insertBefore( taskElBeingDragged, taskElBeingDraggedOver.nextSibling );
-            //}
+            // }
 
             taskListElWithTaskBeingDragged.classList.remove( 'task-list-with-task-being-dragged' );
         });
@@ -444,6 +445,7 @@ class Board extends Component {
         this.render();
     }
 }
+
 let boardConfig = localStorage.getItem( 'board' );
 if( !boardConfig ) {
     boardConfig = {
